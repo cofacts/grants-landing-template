@@ -1,3 +1,9 @@
+# Cofacts' Temporary landing page
+
+1. Modify jade templates
+2. Build & preview with `npm start`
+3. Manually copy compiled files in `static` into `rumors-site`'s `static` folder
+
 # g0v grants landing template
 
 此為 [零時政府公民科技創新獎助金 ( g0v grant ) ](https://grants.g0v.tw) 獲獎專案首頁樣板。有鑑於各專案都處於超展開狀態，有時對於基本門面不太在意，因此我們準備了一個現成可套用的首頁參考樣板設計，各專案可直接分支使用、參考使用、或是仍然可以自己重頭打造一個簡潔的專案到達頁。
@@ -19,7 +25,7 @@
      * 如何讓大眾一起參與
      * 了解更多
    * Footer - 其它輔助性的連結與 「 powered by g0v 」 badge
- 
+
 各模組可依專案需求調整，樣板以參考性質為主，不一定要完全照著做。
 
 
