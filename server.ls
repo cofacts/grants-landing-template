@@ -24,7 +24,7 @@ jade-extapi = do
     return ret
 
 pad = -> if "#it".length < 2 => "0#it" else "#it"
-now = -> new Date! |> -> 
+now = -> new Date! |> ->
   "[#{pad(it.getMonth! + 1)}/#{pad(it.getDate!)}" +
   " #{pad(it.getHours!)}:#{pad(it.getMinutes!)}:#{pad(it.getSeconds!)}]"
 
@@ -313,7 +313,7 @@ update-file = ->
     console.log "[BUILD] recursive from #src:"
     for src in srcs
       try
-        des = src.replace(/src\/styl/, "static/css").replace(/\.styl$/, ".css")
+        des = "static/" + src.replace(/src\/styl/, "static/css").replace(/\.styl$/, ".css")
         code = fs.read-file-sync(src)toString!
         if /^\/\/- ?(module) ?/.exec(code) => continue
         stylus code
@@ -326,7 +326,7 @@ update-file = ->
               console.log "[BUILD]   #src failed: "
               console.log "  >>>", e.name
               console.log "  >>>", e.message
-            else => 
+            else =>
               mkdir-recurse path.dirname(des)
               fs.write-file-sync des, css
               console.log "[BUILD]   #src --> #des"
@@ -334,9 +334,9 @@ update-file = ->
         console.log "[BUILD]   #src failed: "
         console.log e.message
 
-  if type == \jade => 
-    des = src.replace /\.jade$/, ".html"
-    try 
+  if type == \jade =>
+    des = 'static/' + src.replace /\.jade$/, ".html"
+    try
       code = fs.read-file-sync src .toString!
       if /^\/\/- ?(module|view) ?/.exec(code) => return
       desdir = path.dirname(des)
@@ -346,7 +346,7 @@ update-file = ->
     catch
       console.log "[BUILD] #src failed: "
       console.log e.message
-    return 
+    return
 
 
 watcher = chokidar.watch watch-path, ignored: ignore-func, persistent: true

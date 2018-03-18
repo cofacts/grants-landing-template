@@ -1,9 +1,23 @@
 //- module
 .jumbotron.text-light
   .text-center
-    h1.mb-2 具有說服力的一具短話
+    h1.mb-2 你知道你<span id="short-name">媽</span>在<em class="emphasis">轉傳謠言</em>嗎？
     div(style="border-bottom:1px solid rgba(255,255,255,0.3);margin:20px")
-    p 再稍微細節一點解釋這個專案的幾句話，以一到兩行的長度為主
+    p 現在就加入 LINE bot 與 Cofacts 編輯<br>地方的<span id="long-name">媽媽</span>需要你來闢謠！
     br
-    .btn.btn-danger.btn-lg(style="width:280px") 現在就開始使用
+    a.btn.btn-danger.btn-lg(style="width:280px" href="/articles") 立刻開始闢謠
 
+script.
+  var randomCharacters = [
+    {short: '媽', long: '媽媽'},
+    {short: '爸', long: '爸爸'},
+    {short: '妹', long: '妹妹'},
+    {short: '姐', long: '姊姊'},
+    {short: '弟', long: '弟弟'},
+    {short: '哥', long: '哥哥'},
+    {short: '家同事', long: '同事'},
+    {short: '家小孩', long: '孩子'},
+  ];
+  var chosenCharacter = randomCharacters[Math.floor(Math.random()*randomCharacters.length)];
+  document.getElementById('short-name').innerHTML = chosenCharacter.short;
+  document.getElementById('long-name').innerHTML = chosenCharacter.long;
