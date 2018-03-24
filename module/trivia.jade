@@ -1,14 +1,30 @@
 //- module
 .section.section-trivia: .inner
   .text-center: h2 Cofacts 特色
-  p 上面是系統簡表，下面是特點，EX: 「群眾協作」- 不喜歡現有的，就自己寫一份！，「好上手」- LINE bot、「平台化」- 幫助內容產製者與原文連結、「開源」- 會議記錄、文件大公開，隨意取用，讓自架闢謠站遍地開花
+  p Cofacts 謠言查證專案 致力於鼓勵所有人都一起成為別人的聊天機器人。只要主動查證謠言訊息，把你查到的回應加入資料庫，就能進而幫助更多人。
   br
   .row
-    each item in [["Runtime","birthday-cake"],["Redis","bus"],["Scale","camera"],["Add-ons","calculator"],["Storage","bullhorn"],["AI","check-circle"],["Extensibility","cloud"],["Github","binoculars"]]
-      .col-6.col-md-3
-        .media
-          i.fa.mr-2.mt-1(class="fa-" + item[1])
-          .media-body
-            span.name: b #{item[0]}
-            p(style="line-height:1.4em;font-size:0.6em;color:#444") 可以簡單介紹一下 #{item[0]}，長度不拘但各項間可以對齊。
-
+    .col-6.col-md-3
+      .media
+        i.fa.mr-2.mt-1(class="fa-cube")
+        .media-body
+          span.name: b 群眾協作
+          p(style="line-height:1.4em;font-size:0.6em;color:#444") 任何人都可以查證且回應別人的謠言或訊息，並寫在資料庫裡。我們鼓勵公眾參與，最好把你爸爸媽媽都一起找來闢謠。
+    .col-6.col-md-3
+      .media
+        i.fa.mr-2.mt-1(class="fa-cube")
+        .media-body
+          span.name: b 即時回應
+          p(style="line-height:1.4em;font-size:0.6em;color:#444") 只要資料庫裡有回應，機器人就透過程式找答案給你，即時方便不用等。連問候答謝都省了，聊天機器人讓你查謠言都不用不好意思。
+    .col-6.col-md-3
+      .media
+        i.fa.mr-2.mt-1(class="fa-cube")
+        .media-body
+          span.name: b 意見交鋒
+          p(style="line-height:1.4em;font-size:0.6em;color:#444") 了解事實與評論的差異，同時看見不同立場的意見，覺察自己的盲點，互相尊重。你聽你的鳥鳴，但也可以湊過去看她的日出。
+    .col-6.col-md-3
+      .media
+        i.fa.mr-2.mt-1(class="fa-cube")
+        .media-body
+          span.name: b 開源授權
+          p(style="line-height:1.4em;font-size:0.6em;color:#444") 過往的程式碼、會議紀錄、數據資料都完全公開，鼓勵更多的開放資料，透明化地與每個人分享合作，創造不同的可能性。
