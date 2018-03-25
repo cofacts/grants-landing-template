@@ -52,8 +52,41 @@ h2
   font-size: 3em
   font-weight: 900
 
-.section-what
-  padding-bottom: 0
+.section-line
+  padding: 0 40px
+
+  .inner
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+    align-items: flex-end
+
+  .content
+    padding: 40px 0
+    min-width: 50%
+    flex: 1
+
+.phone-container
+  margin: 0 20px
+  max-width: 100%
+  width: 360px
+  overflow: hidden
+
+  .phone-img
+    width: 100%
+    padding-bottom: 150% // of width
+    background: url(img/phone.png) top left
+    background-size: cover
+
+    position: relative // For video
+
+  video
+    position: absolute
+
+    // try-and-error values
+    width: 78%
+    left: 11%
+    top 14%
 
 .section-why
   background: #fff url(img/cofacts-db-bg.jpg) bottom left no-repeat
@@ -104,13 +137,6 @@ h2
 .section-footer
   a
     color: #9be
-
-.phone-container
-  overflow: hidden
-  height: 400px
-
-.phone
-  width: 100%
 
 .sep.gap-sm
   margin: 15px 0
