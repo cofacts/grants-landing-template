@@ -2,7 +2,7 @@
 
 1. Modify jade templates
 2. Build & preview with `npm start`
-3. Manually copy compiled files in `static` into `rumors-site`'s `static` folder
+3. Copy compiled files in `static` into `rumors-site`'s `static` folder (using `npm run landing` in rumors-site repo)
 
 # g0v grants landing template
 
