@@ -1,22 +1,22 @@
 //- module
 .jumbotron.text-light
   .text-center
-    h1.mb-2 你知道你<span id="short-name">媽</span>在<em class="emphasis">轉傳謠言</em>嗎？
+    h1.mb-2 Are you aware that<span id="short-name">your mom</span>is<em class="emphasis">helping the spread of</em>an internet hoax?
     div(style="border-bottom:1px solid rgba(255,255,255,0.3);margin:20px")
-    p 現在就加入 LINE bot 與 Cofacts 編輯<br>地方的<span id="long-name">媽媽</span>需要你來闢謠！
+    p Follow our LINE bot or join as one of our Cofacts editor.<br>Local<span id="long-name">moms</span>need your guidance!
     br
-    a.btn.btn-danger.btn-lg(style="width:280px" href="/articles") 立刻開始闢謠
+    a.btn.btn-danger.btn-lg(style="width:280px" href="/articles") Start debunking now
 
 script.
   var randomCharacters = [
-    {short: '媽', long: '媽媽'},
-    {short: '爸', long: '爸爸'},
-    {short: '妹', long: '妹妹'},
-    {short: '姐', long: '姊姊'},
-    {short: '弟', long: '弟弟'},
-    {short: '哥', long: '哥哥'},
-    {short: '家同事', long: '同事'},
-    {short: '家小孩', long: '孩子'},
+    {short: 'your mom', long: 'moms'},
+    {short: 'your dad', long: 'dads'},
+    {short: 'your sister', long: 'sis'},
+    {short: 'your sister', long: 'sis'},
+    {short: 'your brother', long: 'bro},
+    {short: 'your brother', long: 'bro'},
+    {short: 'your colleague', long: 'colleagues'},
+    {short: 'your child', long: 'children'},
   ];
   var chosenCharacter = randomCharacters[Math.floor(Math.random()*randomCharacters.length)];
   document.getElementById('short-name').innerHTML = chosenCharacter.short;
