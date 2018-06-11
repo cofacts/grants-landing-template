@@ -1,7 +1,7 @@
 # Cofacts' Temporary landing page
 
 1. Modify jade templates
-2. Build & preview with `npm start`
+2. Build & preview with `npm start`. View `localhost:9999/static/index-tw.html` or `localhost:9999/static/index-en.html`
 3. Copy compiled files in `static` into `rumors-site`'s `static` folder (using `npm run landing` in rumors-site repo)
 
 # g0v grants landing template

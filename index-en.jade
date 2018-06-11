@@ -1,0 +1,34 @@
+doctype html
+html(lang=en_US)
+  head
+    meta(property="og:locale",content="en_US")
+    meta(property="og:title",content="Cofacts - Collaborative fact-checking system")
+    meta(property="og:type",content="article")
+    meta(property="og:url",content="https://cofacts.g0v.tw")
+    meta(property="og:image",content="https://cofacts.g0v.tw/static/img/ogimage.png")
+    meta(property="og:image:type",content="image/png")
+    meta(property="og:image:width",content="1920")
+    meta(property="og:image:height",content="1271")
+    meta(property="og:description",content="「Cofacts 真的假的」是一套連結網路訊息與事實查核的協作型系統。")
+    meta(property="article:author",content="MrOrz")
+    meta(property="article:section",content="Taiwan")
+    meta(name="viewport" content="width=device-width; initial-scale=1.0;")
+    meta(charset="utf-8")
+    link(rel="stylesheet",type="text/css",
+    href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css")
+    link(rel="stylesheet",href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css")
+    link(rel="stylesheet",type="text/css",href="/static/index-en.css")
+    link(href='//fonts.googleapis.com/css?family=Lato:300,700',rel='stylesheet',type='text/css')
+
+
+  body
+    include module-en/nav.jade
+    include module-en/jumbotron.jade
+    include module-en/line.jade
+    include module-en/editor.jade
+    include module-en/traction.jade
+    include module-en/photos.jade
+    include module-en/trivia.jade
+    include module-en/media.jade
+    include module-en/contribute.jade
+    include module-en/footer.jade
